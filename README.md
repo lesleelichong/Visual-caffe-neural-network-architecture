@@ -8,4 +8,4 @@ Caffe自带Python目录里包含一个draw_net.py文件，可以**可视化神�
 首先，下载graphviz-2.38.msi文件并且安装它，将Graphviz2.38\bin的目录设置到系统环境变量里；其次，下载pyparsing-1.5.7.win32-py2.7.exe
 并且将其安装到**Python27\Lib\site-packages**目录里；最后，下载pydot-1.2.3包文件，cmd方式进入该目录，执行python setup.py install 即可。
 #### 运行draw_net.py
-打开PowerShell(用cmd方式也可以)，执行python draw_net.py resnet50.txt resnet50.png，就会生成resnet50.png的可视化图。(不在同一目录自己添加文件自己所在的目录)
+打开PowerShell(用cmd方式也可以)，执行python draw_net.py resnet50.txt resnet50.png，就会生成resnet50.png的可视化图。(但是要注意，draw_net必须要在pycaffe里，和python生成的caffe同级目录)
